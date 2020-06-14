@@ -31,8 +31,8 @@ class Editor extends React.Component {
     }
     render() {
         return (
-            <div className={"editor"} >
-                <textarea id={"regEx"} placeholder="INPUT YOUR TEXT HERE" value={this.state.value} onChange={this.handleChange} rows="30" cols="60">
+            <div className="editor" >
+                <textarea id={"regEx"} placeholder="INPUT YOUR TEXT HERE" value={this.state.value} onChange={this.handleChange} rows="60" cols="120">
                      </textarea>
                 <div className={"output"}>
                     {ReactHtmlParser(this.markDownToHtml(this.state.value))}
